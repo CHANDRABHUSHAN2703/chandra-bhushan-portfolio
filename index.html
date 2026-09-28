@@ -1,276 +1,1175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chandra Bhushan Pathak — Software Engineering portfolio. Backend, APIs, databases, DSA and AI/ML projects.">
-  <meta name="theme-color" content="#070b14">
-  <meta property="og:title" content="Chandra Bhushan Pathak | Software Engineer">
-  <meta property="og:description" content="Software engineering portfolio — backend systems, APIs, databases, DSA and AI/ML.">
-  <meta property="og:type" content="website">
-  <title>Chandra Bhushan Pathak | Software Engineer</title>
-  <link rel="preload" as="image" href="profile.jpeg">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Chandra Bhushan Pathak — Software Engineer portfolio"
+    >
+
+    <title>Chandra Bhushan Pathak | Software Engineer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="noise"></div>
-  <div class="progress" id="progress"></div>
 
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Chandra Bhushan Pathak home">
-        <span class="brand-mark">CB</span>
-        <span>Chandra Bhushan</span>
-      </a>
+<!-- =====================================================
+     HEADER / NAVBAR
+===================================================== -->
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<header class="navbar">
 
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Journey</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
-      </div>
-    </nav>
-  </header>
+    <div class="nav-container">
 
-  <main>
-    <section class="hero container">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> Open to software engineering opportunities</div>
-        <p class="hero-kicker">SOFTWARE ENGINEERING · BACKEND · DSA</p>
-        <h1>I build software that is <span>clear, reliable & useful.</span></h1>
-        <p class="hero-text">
-          I'm Chandra Bhushan Pathak, a final-year B.Tech student focused on backend engineering,
-          REST APIs, databases, problem solving and practical AI/ML systems.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Explore my work <span>↓</span></a>
-          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">View resume ↗</a>
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            <span class="logo-mark">CB</span>
+            <span class="logo-text">CHANDRA</span>
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="nav-menu">
+
+            <a href="#home">HOME</a>
+
+            <a href="#skills">SKILLS</a>
+
+            <a href="#projects">PROJECTS</a>
+
+            <a href="#experience">EXPERIENCE</a>
+
+            <a href="#about">ABOUT</a>
+
+        </nav>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="portfolioSearch"
+                placeholder="Search projects, skills..."
+            >
+
         </div>
-        <div class="social-row" id="socialRow" aria-label="Social links"></div>
-      </div>
 
-      <div class="hero-visual reveal">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="photo-frame">
-          <div class="photo-glow"></div>
-          <img src="profile.jpeg" alt="Portrait of Chandra Bhushan Pathak">
-        </div>
-        <div class="floating-card card-one">
-          <strong>340+</strong>
-          <span>LeetCode problems</span>
-        </div>
-        <div class="floating-card card-two">
-          <strong>7.69</strong>
-          <span>Current CGPA</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="stats container reveal" aria-label="Highlights">
-      <div><strong>340+</strong><span>Problems solved</span></div>
-      <div><strong>7.69</strong><span>CGPA</span></div>
-      <div><strong>3</strong><span>Featured projects</span></div>
-      <div><strong>5+</strong><span>Core backend technologies</span></div>
-    </section>
+        <!-- Right navigation -->
+        <div class="nav-actions">
 
-    <section class="section container" id="about">
-      <div class="section-heading reveal">
-        <p class="section-label">01 / ABOUT</p>
-        <h2>A developer who cares about <em>how things work.</em></h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-main reveal">
-          <p>
-            I enjoy turning ideas into working products — from designing relational schemas and
-            REST APIs to debugging production issues and solving algorithmic problems.
-          </p>
-          <p>
-            My current focus is becoming a strong software engineer with a solid foundation in
-            data structures, backend development, databases and computer science fundamentals,
-            while continuing to explore AI/ML applications.
-          </p>
-          <div class="mini-note">
-            <span>⌁</span>
-            <p>Currently pursuing B.Tech in Computer Science & Engineering (AI & ML) at Noida Institute of Engineering and Technology.</p>
-          </div>
-        </div>
-        <aside class="about-card reveal">
-          <span class="card-label">CURRENT FOCUS</span>
-          <ul>
-            <li>Backend engineering</li>
-            <li>DSA & problem solving</li>
-            <li>REST API design</li>
-            <li>SQL & database systems</li>
-            <li>Practical AI/ML</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+            <a href="#contact" class="nav-action">
+                <span>♙</span>
+                <small>Profile</small>
+            </a>
 
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-label">02 / SKILLS</p>
-          <h2>The tools I use to <em>ship.</em></h2>
+            <a
+                href="resume.pdf"
+                target="_blank"
+                class="nav-action"
+            >
+                <span>↓</span>
+                <small>Resume</small>
+            </a>
+
+            <a
+                href="https://github.com/CHANDRABHUSHAN2703"
+                target="_blank"
+                class="nav-action"
+            >
+                <span>⌘</span>
+                <small>GitHub</small>
+            </a>
+
         </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section id="home" class="hero-section">
+
+    <div class="hero-container">
+
+
+        <!-- Left content -->
+        <div class="hero-content">
+
+            <p class="hero-small-text">
+                SOFTWARE ENGINEERING · BACKEND · DSA
+            </p>
+
+
+            <h1>
+                BUILDING
+                <br>
+
+                <span>SOFTWARE</span>
+
+                <br>
+
+                THAT MATTERS.
+            </h1>
+
+
+            <p class="hero-description">
+
+                Hi, I'm <strong>Chandra Bhushan Pathak</strong> —
+                a final-year Computer Science student focused on
+                backend engineering, REST APIs, databases and
+                problem solving.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#projects"
+                    class="primary-button"
+                >
+                    EXPLORE MY WORK
+                    <span>→</span>
+                </a>
+
+
+                <a
+                    href="resume.pdf"
+                    target="_blank"
+                    class="secondary-button"
+                >
+                    VIEW RESUME
+                </a>
+
+            </div>
+
+
+            <!-- Quick stats -->
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <strong>340+</strong>
+
+                    <span>
+                        LEETCODE
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>7.69</strong>
+
+                    <span>
+                        CGPA
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>3+</strong>
+
+                    <span>
+                        PROJECTS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Right image -->
+
+        <div class="hero-image-container">
+
+            <div class="hero-image-bg"></div>
+
+            <div class="hero-image">
+
+                <img
+                    src="profile.jpeg"
+                    alt="Chandra Bhushan Pathak"
+                >
+
+            </div>
+
+
+            <!-- Floating badge -->
+
+            <div class="hero-badge">
+
+                <span class="badge-dot"></span>
+
+                <div>
+
+                    <strong>OPEN TO WORK</strong>
+
+                    <small>
+                        Software Engineering
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MARQUEE / HIGHLIGHTS
+===================================================== -->
+
+<section class="marquee-section">
+
+    <div class="marquee-content">
+
+        <span>SOFTWARE ENGINEERING</span>
+
+        <span>✦</span>
+
+        <span>BACKEND DEVELOPMENT</span>
+
+        <span>✦</span>
+
+        <span>DATA STRUCTURES</span>
+
+        <span>✦</span>
+
+        <span>REST APIs</span>
+
+        <span>✦</span>
+
+        <span>DATABASES</span>
+
+        <span>✦</span>
+
+        <span>AI / ML</span>
+
+        <span>✦</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS SECTION
+===================================================== -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="section-container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="section-label">
+                    SHOP BY SKILL
+                </p>
+
+                <h2>
+                    WHAT I
+                    <span>WORK WITH.</span>
+                </h2>
+
+            </div>
+
+
+            <p class="section-description">
+
+                Technologies and computer science fundamentals
+                I use to build software.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Skill categories -->
+
         <div class="skill-grid">
-          <article class="skill-card reveal">
-            <span class="skill-index">01</span>
-            <h3>Languages</h3>
-            <div class="tags"><span>C++</span><span>Python</span><span>JavaScript</span><span>C</span><span>SQL</span></div>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-index">02</span>
-            <h3>Backend</h3>
-            <div class="tags"><span>FastAPI</span><span>Flask</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>CORS</span></div>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-index">03</span>
-            <h3>Data & AI/ML</h3>
-            <div class="tags"><span>MySQL</span><span>MongoDB</span><span>NLP</span><span>Deep Learning</span><span>TensorFlow</span></div>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-index">04</span>
-            <h3>Core CS & Tools</h3>
-            <div class="tags"><span>DSA</span><span>OOP</span><span>OS</span><span>Networks</span><span>DBMS</span><span>Git</span><span>Linux</span><span>VS Code</span><span>Vercel</span></div>
-          </article>
+
+
+            <!-- Skill 1 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    01
+                </div>
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    LANGUAGES
+                </h3>
+
+                <p>
+                    C++ · Python · JavaScript · C · SQL
+                </p>
+
+                <a href="#projects">
+                    EXPLORE →
+                </a>
+
+            </article>
+
+
+
+            <!-- Skill 2 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    02
+                </div>
+
+                <div class="skill-icon">
+                    ⚙
+                </div>
+
+                <h3>
+                    BACKEND
+                </h3>
+
+                <p>
+                    FastAPI · Flask · Node.js · Express.js
+                </p>
+
+                <a href="#projects">
+                    EXPLORE →
+                </a>
+
+            </article>
+
+
+
+            <!-- Skill 3 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    03
+                </div>
+
+                <div class="skill-icon">
+                    ◉
+                </div>
+
+                <h3>
+                    DATABASES
+                </h3>
+
+                <p>
+                    MySQL · MongoDB · Database Design
+                </p>
+
+                <a href="#projects">
+                    EXPLORE →
+                </a>
+
+            </article>
+
+
+
+            <!-- Skill 4 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    04
+                </div>
+
+                <div class="skill-icon">
+                    ◈
+                </div>
+
+                <h3>
+                    AI / ML
+                </h3>
+
+                <p>
+                    NLP · Deep Learning · TensorFlow
+                </p>
+
+                <a href="#projects">
+                    EXPLORE →
+                </a>
+
+            </article>
+
+
+
+            <!-- Skill 5 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    05
+                </div>
+
+                <div class="skill-icon">
+                    #
+                </div>
+
+                <h3>
+                    DSA
+                </h3>
+
+                <p>
+                    340+ LeetCode problems · C++
+                </p>
+
+                <a
+                    href="https://leetcode.com/"
+                    target="_blank"
+                >
+                    VIEW PROFILE →
+                </a>
+
+            </article>
+
+
+
+            <!-- Skill 6 -->
+
+            <article class="skill-card">
+
+                <div class="skill-number">
+                    06
+                </div>
+
+                <div class="skill-icon">
+                    ◆
+                </div>
+
+                <h3>
+                    CORE CS
+                </h3>
+
+                <p>
+                    OOP · OS · CN · DBMS
+                </p>
+
+                <a href="#experience">
+                    EXPLORE →
+                </a>
+
+            </article>
+
         </div>
-      </div>
-    </section>
 
-    <section class="section container" id="projects">
-      <div class="section-heading project-heading reveal">
-        <div>
-          <p class="section-label">03 / SELECTED WORK</p>
-          <h2>Selected work, built with <em>purpose.</em></h2>
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS SECTION
+===================================================== -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="section-container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="section-label">
+                    TRENDING PROJECTS
+                </p>
+
+                <h2>
+                    SELECTED
+                    <span>WORK.</span>
+                </h2>
+
+            </div>
+
+
+            <p class="section-description">
+
+                Projects where I applied backend engineering,
+                databases, APIs and AI/ML.
+
+            </p>
+
         </div>
-        <p class="heading-side">A few things I've built across backend engineering, full-stack development and applied AI.</p>
-      </div>
 
-      <div class="project-list">
-        <article class="project-card featured reveal">
-          <div class="project-number">01</div>
-          <div class="project-content">
-            <div class="project-top">
-              <div>
-                <span class="project-type">AI / BACKEND</span>
-                <h3>AI Career & Placement Platform</h3>
-              </div>
-              <span class="project-arrow">↗</span>
-            </div>
-            <p>A FastAPI-based platform that turns resume and job data into structured candidate analysis, skill-gap insights and personalized preparation roadmaps.</p>
-            <div class="project-tech"><span>Python</span><span>FastAPI</span><span>MySQL</span><span>AI/ML</span><span>REST APIs</span></div>
-            <div class="project-links">
-              <a href="#" data-link="github" class="dynamic-link">GitHub ↗</a>
-            </div>
-          </div>
-          <div class="project-visual career-visual">
-            <div class="mock-window">
-              <div class="mock-bar"><i></i><i></i><i></i></div>
-              <div class="mock-body">
-                <div class="mock-line wide"></div><div class="mock-line"></div>
-                <div class="mock-score">92<span>%</span></div>
-                <div class="mock-pills"><b>Python</b><b>SQL</b><b>DSA</b></div>
-              </div>
-            </div>
-          </div>
-        </article>
 
-        <article class="project-card reveal">
-          <div class="project-number">02</div>
-          <div class="project-content">
-            <span class="project-type">FULL-STACK</span>
-            <h3>QR-ify</h3>
-            <p>A full-stack QR generator and decoder with public REST APIs, clean frontend-backend communication and a live Vercel deployment.</p>
-            <div class="project-tech"><span>Node.js</span><span>Express</span><span>JavaScript</span><span>Vercel</span></div>
-            <div class="project-links">
-              <a href="https://qrify-eight.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a href="#" data-link="github" class="dynamic-link">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
 
-        <article class="project-card reveal">
-          <div class="project-number">03</div>
-          <div class="project-content">
-            <span class="project-type">WEB / DATABASE</span>
-            <h3>Plant Care Reminder</h3>
-            <p>A Flask application for managing plant care schedules with CRUD operations, a relational MySQL schema and backend reminder logic.</p>
-            <div class="project-tech"><span>Flask</span><span>Python</span><span>MySQL</span><span>CRUD</span></div>
-            <div class="project-links">
-              <a href="#" data-link="github" class="dynamic-link">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+        <!-- Project cards -->
 
-    <section class="section section-alt" id="experience">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-label">04 / JOURNEY</p>
-          <h2>Learning, solving, <em>building.</em></h2>
+        <div class="project-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-image-one">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <span class="project-category">
+                        AI / BACKEND
+                    </span>
+
+                </div>
+
+
+                <div class="project-info">
+
+                    <div class="project-title-row">
+
+                        <h3>
+                            AI Career &
+                            <br>
+                            Placement Platform
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A FastAPI-based platform that analyzes
+                        resumes, matches candidates with job
+                        requirements, identifies skill gaps and
+                        generates personalized preparation
+                        roadmaps.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+
+                        <span>FastAPI</span>
+
+                        <span>MySQL</span>
+
+                        <span>AI/ML</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <span>
+                            RESUME ANALYSIS · JOB MATCHING
+                        </span>
+
+                        <a href="#">
+                            VIEW PROJECT →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-image-two">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <span class="project-category">
+                        FULL STACK
+                    </span>
+
+                </div>
+
+
+                <div class="project-info">
+
+                    <div class="project-title-row">
+
+                        <h3>
+                            QR-ify
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A full-stack QR code generator and decoder
+                        with public REST APIs, CORS configuration
+                        and frontend-backend communication.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Node.js</span>
+
+                        <span>Express</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Vercel</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <span>
+                            REST API · PRODUCTION DEPLOYMENT
+                        </span>
+
+                        <a
+                            href="https://qrify-eight.vercel.app/"
+                            target="_blank"
+                        >
+                            LIVE DEMO →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image project-image-three">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <span class="project-category">
+                        WEB / DATABASE
+                    </span>
+
+                </div>
+
+
+                <div class="project-info">
+
+                    <div class="project-title-row">
+
+                        <h3>
+                            Plant Care
+                            <br>
+                            Reminder
+                        </h3>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        A Flask application for managing plant
+                        care schedules with CRUD operations,
+                        relational MySQL schema and backend
+                        scheduling logic.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Flask</span>
+
+                        <span>Python</span>
+
+                        <span>MySQL</span>
+
+                        <span>CRUD</span>
+
+                    </div>
+
+
+                    <div class="project-footer">
+
+                        <span>
+                            DATABASE · CRUD · SCHEDULING
+                        </span>
+
+                        <a href="#">
+                            VIEW PROJECT →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
         </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DSA / ACHIEVEMENTS BANNER
+===================================================== -->
+
+<section class="achievement-section">
+
+    <div class="achievement-container">
+
+        <div class="achievement-content">
+
+            <p class="section-label">
+                PROBLEM SOLVING
+            </p>
+
+            <h2>
+                340+
+                <span>
+                    PROBLEMS SOLVED.
+                </span>
+            </h2>
+
+            <p>
+
+                Consistent problem solving across Arrays,
+                Strings, Hash Tables, Dynamic Programming,
+                Divide & Conquer and Monotonic Stack.
+
+            </p>
+
+
+            <a
+                href="https://leetcode.com/"
+                target="_blank"
+                class="primary-button"
+            >
+                VIEW LEETCODE
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="achievement-number">
+            340+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EXPERIENCE / EDUCATION
+===================================================== -->
+
+<section id="experience" class="section experience-section">
+
+    <div class="section-container">
+
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="section-label">
+                    MY JOURNEY
+                </p>
+
+                <h2>
+                    LEARNING.
+                    <span>BUILDING.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
 
         <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2023 — 2027</div>
-            <div>
-              <h3>B.Tech — Computer Science & Engineering (AI & ML)</h3>
-              <p>Noida Institute of Engineering and Technology, Greater Noida</p>
-              <span class="timeline-meta">CGPA 7.69 · Expected 2027</span>
-            </div>
-          </div>
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2026</div>
-            <div>
-              <h3>Problem Solving</h3>
-              <p>340+ LeetCode problems across arrays, strings, hash tables, dynamic programming, divide & conquer and monotonic stack.</p>
-              <span class="timeline-meta">LeetCode 50 Days · 100 Days · Jan LeetCoding Challenge</span>
-            </div>
-          </div>
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Learning</div>
-            <div>
-              <h3>Certifications & Continuous Learning</h3>
-              <p>Infosys Springboard: Deep Learning for Developers, Building ML Systems with TensorFlow, OOP using Python, Unix & Linux OS Fundamentals.</p>
-              <span class="timeline-meta">Cisco Networking Academy: Networking Essentials · Introduction to Cybersecurity</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="section container" id="contact">
-      <div class="contact-card reveal">
+
+            <!-- Education -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2023 — 2027
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        B.Tech — Computer Science &
+                        Engineering (AI & ML)
+                    </h3>
+
+                    <p>
+                        Noida Institute of Engineering and
+                        Technology, Greater Noida
+                    </p>
+
+                    <span>
+                        CGPA: 7.69
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Problem solving -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    2026
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Consistent Problem Solving
+                    </h3>
+
+                    <p>
+
+                        Solved 340+ LeetCode problems covering
+                        multiple algorithmic patterns and
+                        earned 50 Days and 100 Days badges.
+
+                    </p>
+
+                    <span>
+                        C++ · DSA · Algorithms
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Certifications -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-year">
+                    CERTIFICATIONS
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Continuous Learning
+                    </h3>
+
+                    <p>
+
+                        Infosys Springboard and Cisco Networking
+                        Academy certifications across Deep
+                        Learning, TensorFlow, Python, Unix,
+                        Linux and Networking.
+
+                    </p>
+
+                    <span>
+                        AI/ML · Linux · Networking
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+
+<section id="about" class="section about-section">
+
+    <div class="section-container">
+
+        <div class="about-grid">
+
+
+            <div class="about-heading">
+
+                <p class="section-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    MORE THAN
+                    <span>JUST CODE.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+
+                    I enjoy turning ideas into working products —
+                    from designing APIs and database schemas to
+                    debugging real issues and solving algorithmic
+                    problems.
+
+                </p>
+
+
+                <p>
+
+                    My goal is to become a strong software engineer
+                    with a solid foundation in data structures,
+                    backend development, databases and core
+                    computer science.
+
+                </p>
+
+
+                <div class="about-highlights">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Backend Engineering</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Problem Solving</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Database Systems</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Practical AI/ML</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT / CTA
+===================================================== -->
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <p class="section-label">
+            LET'S CONNECT
+        </p>
+
+
+        <h2>
+
+            HAVE A PROJECT
+            <br>
+
+            <span>IN MIND?</span>
+
+        </h2>
+
+
+        <p>
+
+            Open to software engineering internships,
+            entry-level opportunities, collaborations and
+            interesting projects.
+
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="mailto:pathakmuskan829@gmail.com"
+                class="primary-button"
+            >
+                EMAIL ME →
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="secondary-button"
+            >
+                LINKEDIN
+            </a>
+
+
+            <a
+                href="https://github.com/CHANDRABHUSHAN2703"
+                target="_blank"
+                class="secondary-button"
+            >
+                GITHUB
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
         <div>
-          <p class="section-label">05 / CONTACT</p>
-          <h2>Let's build something <em>meaningful.</em></h2>
-          <p>Open to software engineering internships, entry-level opportunities, collaborations and interesting projects.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:pathakmuskan829@gmail.com">Email me ↗</a>
-          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer container">
-    <span>© <span id="year"></span> Chandra Bhushan Pathak</span>
-    <span>Designed & built with HTML · CSS · JavaScript</span>
-  </footer>
+            <strong>
+                CHANDRA BHUSHAN PATHAK
+            </strong>
 
-  <script src="script.js"></script>
+            <p>
+                Software Engineer · CSE (AI & ML)
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                © 2026 Chandra Bhushan Pathak
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
 </body>
 </html>
