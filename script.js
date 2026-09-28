@@ -1,6 +1,6 @@
 const PROFILE = {
   email: "pathakmuskan829@gmail.com",
-  github: 'https://github.com/CHANDRABHUSHAN2703/qrify',
+  github: 'https://github.com/CHANDRABHUSHAN2703/',
   linkedin: 'https://www.linkedin.com/in/chandra-bhushanpathak',
   leetcode: 'https://leetcode.com/u/bhushan_2703/',
   live: 'https://qrify-eight.vercel.app'
